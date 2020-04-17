@@ -1,1 +1,35 @@
+//main: index.less
+
 // Mixins in here
+
+//Flex Mixin
+.flex(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+//Button Mixin
+.btn-mixin(){
+    //Btn size
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    //Font
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+
+    //Flex, Color, Hover, cursor
+    .flex(row, center, center); //Alignment
+    color: @main-bg;
+    background-color: @button-bg;
+    cursor: pointer;
+    &:hover{
+        color: @font-color;
+        background-color: @footer-bg;
+        border: 1px solid @font-color;
+    }
+
+
+}

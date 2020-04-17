@@ -1,1 +1,44 @@
+//main: index.less
+
 // Navigation Styles here
+
+.nav-container{
+    height: 7vh;
+    .flex(row, space-between, center);
+    border-bottom: 2px dashed @navigation-border;
+
+    nav{
+        .flex(row, flex-end, center);
+        line-height: 1.5;
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+
+        // @media @mobile{
+        //     margin: 0 10px;
+        // }
+
+        a{
+            margin: 0rem 1.6rem;
+            text-decoration: none;
+            color: @font-color;
+            &:hover{
+                color: @button-bg;
+            }
+
+            @media @mobile{
+                padding: 0 2vw;
+            }
+        }
+    }
+
+    @media @mobile{
+        height: 10rem;
+        .flex(column, center, center);
+
+        h1{
+            margin-bottom:  1vh;
+        }
+
+    } // End of Media Query
+
+} // NAV CSS
