@@ -221,9 +221,6 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home * {
-  border: 1px solid lightgray;
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -322,6 +319,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 90%;
   }
 }
 .home .content-pick .content-pick-flex-container {
@@ -360,13 +358,4 @@ img {
   color: #212529;
   background-color: #FFEBCD;
   border: 1px solid #212529;
-}
-@media only screen and (max-width: 600px) {
-  .home .content-pick .content-pick-flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    width: 90%;
-  }
 }
